@@ -96,11 +96,10 @@ async def next_page(bot, query):
         ]
     )
     btn.insert(1,
-        [ 
-             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-             InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
-             InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
+        [
+            InlineKeyboardButton(f'❣️ Movies', url='https://t.me/+NqEpYwqvzdIwYWU1'),
+            InlineKeyboardButton(f'🎁 Tips', 'movies'),
+            InlineKeyboardButton(f'📮 Series', url='https://t.me/+En35FVDc5kAwMTg1')
         ]
     )
 
@@ -979,10 +978,9 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
     )
     btn.insert(1,
         [
-             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-             InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
-             InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
+            InlineKeyboardButton(f'❣️ Movies', url='https://t.me/+NqEpYwqvzdIwYWU1'),
+            InlineKeyboardButton(f'🎁 Tips', 'movies'),
+            InlineKeyboardButton(f'📮 Series', url='https://t.me/+En35FVDc5kAwMTg1')
         ]
     )
 
