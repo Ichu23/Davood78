@@ -502,17 +502,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-        InlineKeyboardButton('❄️ 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ❄️', url=f'https://t.me/+MNczoLfGDYM1ZmEx') ] ,
-       [
-        InlineKeyboardButton('🎬 𝙼𝙾𝚅𝙸𝙴 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/MOVIESHUB_WA'),
-        InlineKeyboardButton('🤖 𝙱𝙾𝚃 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/TG_BOTS_HUB')
-     ],[
-        InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help'),
-        InlineKeyboardButton('😊 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
-     ],[
-        InlineKeyboardButton('𝙲𝙻𝙾𝚂𝙴', callback_data='close')    
-    ]]
+        buttons = [[            
+            InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 1🔸', url='https://t.me/+3SSAvOkxW_hjMDJl'),
+            InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 2🔸', url='https://t.me/+KjgLbxaw_8M4NDA9')
+            ],[ 
+            InlineKeyboardButton('🔗 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/+NqEpYwqvzdIwYWU1')
+            ],[     
+            InlineKeyboardButton('❗️ʜᴇʟᴘ❗️', callback_data='help'),
+            InlineKeyboardButton('❕ᴀʙᴏᴜᴛ❕', callback_data='about')
+            ],[
+            InlineKeyboardButton('🌚 ʙᴏᴛ ᴏᴡɴᴇʀ 👻', url='https://t.me/Ichappi23')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
         if not START_IMAGE_URL:
