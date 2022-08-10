@@ -922,7 +922,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     except: pass
 
 
-async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
+async def auto_filter(client, msg, spoll=False):
     if not spoll:
         message = msg
         settings = await get_settings(message.chat.id)
@@ -943,10 +943,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
         settings = await get_settings(msg.message.chat.id)
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-    
     pre = 'filep' if settings['file_secure'] else 'file'
-    pre = 'Chat' if settings['redirect_to'] == 'Chat' else pre
-
     if settings["button"]:
         btn = [
             [
